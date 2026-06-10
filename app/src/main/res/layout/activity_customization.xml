@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F1"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/back"
+            android:padding="10dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customize Your Cake"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/brown"
+            android:layout_marginTop="16dp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Bakery"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/brown" />
+
+        <Spinner
+            android:id="@+id/spinnerShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_rounded_box"
+            android:padding="5dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cake Details"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/brown" />
+
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Describe your cake (flavor, theme, message...)"
+            android:gravity="top"
+            android:background="@drawable/white_rounded_box"
+            android:padding="12dp"
+            android:textColor="@color/brown"
+            android:textSize="14sp"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/editMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Message on cake"
+            android:background="@drawable/white_rounded_box"
+            android:padding="12dp"
+            android:textColor="@color/brown"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Size (e.g. 0.5kg, 1kg)"
+            android:background="@drawable/white_rounded_box"
+            android:padding="12dp"
+            android:textColor="@color/brown"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity (e.g. 1, 2)"
+            android:background="@drawable/white_rounded_box"
+            android:padding="12dp"
+            android:textColor="@color/brown"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: ₹0"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/brown_dark"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reference Image"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/brown" />
+
+        <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="Image Preview"
+            android:backgroundTint="#F5EDE4"
+            android:clipToOutline="true"
+            android:background="@drawable/white_rounded_box" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Image"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/brown_bg"
+            android:textColor="@color/brown"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add to Cart"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/brown_bg"
+            android:textColor="@color/brown"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

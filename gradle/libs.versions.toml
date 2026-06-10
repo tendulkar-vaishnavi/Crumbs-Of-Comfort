@@ -1,0 +1,68 @@
+[versions]
+agp = "8.9.1"
+checkout = "1.6.41"
+checkoutVersion = "1.6.40"
+cloudinaryAndroid = "2.2.1"
+cloudinaryCloudinaryAndroid = "2.2.0"
+comAmulyakhareTextdrawable = "1.0.1"
+coordinatorlayout = "1.3.0"
+dotsindicator = "5.0"
+firebaseAuthVersion = "22.3.1"
+firebaseCore = "21.1.1"
+firebaseDatabaseVersion = "20.3.0"
+glide = "4.16.0"
+googleFirebaseAuth = "21.0.6"
+gson = "2.11.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+lottie = "6.3.0"
+material = "1.12.0"
+activity = "1.8.0"
+constraintlayout = "2.2.1"
+googleGmsGoogleServices = "4.4.2"
+firebaseDatabase = "21.0.0"
+firebaseAuth = "23.2.0"
+materialdatetimepicker = "4.2.3"
+okhttp = "4.9.3"
+playServicesAuth = "21.3.0"
+playServicesLocation = "21.0.1"
+retrofit = "2.9.0"
+
+[libraries]
+checkout = { module = "com.razorpay:checkout", version.ref = "checkout" }
+checkout-v1640 = { module = "com.razorpay:checkout", version.ref = "checkoutVersion" }
+cloudinary-android = { module = "com.cloudinary:cloudinary-android", version.ref = "cloudinaryAndroid" }
+cloudinary-android-v220 = { module = "com.cloudinary:cloudinary-android", version.ref = "cloudinaryCloudinaryAndroid" }
+com-amulyakhare-textdrawable = { module = "com.amulyakhare:com.amulyakhare.textdrawable", version.ref = "comAmulyakhareTextdrawable" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+coordinatorlayout = { module = "androidx.coordinatorlayout:coordinatorlayout", version.ref = "coordinatorlayout" }
+dotsindicator = { module = "com.tbuonomo:dotsindicator", version.ref = "dotsindicator" }
+firebase-auth-v2106 = { module = "com.google.firebase:firebase-auth", version.ref = "googleFirebaseAuth" }
+firebase-auth-v2231 = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuthVersion" }
+firebase-core = { module = "com.google.firebase:firebase-core", version.ref = "firebaseCore" }
+firebase-database-v2030 = { module = "com.google.firebase:firebase-database", version.ref = "firebaseDatabaseVersion" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+materialdatetimepicker = { module = "com.wdullaer:materialdatetimepicker", version.ref = "materialdatetimepicker" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesAuth" }
+play-services-location-v2101 = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+

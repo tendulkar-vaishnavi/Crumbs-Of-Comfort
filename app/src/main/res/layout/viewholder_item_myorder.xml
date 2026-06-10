@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:background="@color/white"
+    app:cardCornerRadius="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/orderImage"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/cam" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtItemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cake Name"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/brown" />
+
+                <TextView
+                    android:id="@+id/txtShopName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shop: 7th Heaven"
+                    android:textSize="14sp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Size: 1kg"
+                    android:textSize="14sp"
+                    android:layout_marginTop="2dp" />
+
+                <TextView
+                    android:id="@+id/txtQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity: 1"
+                    android:textSize="14sp"
+                    android:layout_marginTop="2dp" />
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textSize="14sp"
+                    android:layout_marginTop="2dp" />
+                <TextView
+                    android:id="@+id/txtDeliveryDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DeliveryDate"
+                    android:textSize="14sp"
+                    android:layout_marginTop="2dp" />
+                <TextView
+                    android:id="@+id/txtDeliverytime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deliverytime"
+                    android:textSize="14sp"
+                    android:layout_marginTop="2dp" />
+
+
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status: Pending"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGiveFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Give Feedback"
+            android:textStyle="bold"
+            android:background="@drawable/brown_bg"
+            android:textColor="@color/brown"
+            android:layout_marginHorizontal="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:visibility="gone"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnTrackDelivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Track Delivery"
+            android:textStyle="bold"
+            android:background="@drawable/brown_bg"
+            android:textColor="@color/brown"
+            android:layout_marginHorizontal="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:visibility="gone"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancelOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:background="@drawable/brown_bg"
+            android:textColor="@color/brown"
+            android:layout_marginHorizontal="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="brown">#864912</color>
+    <color name="lightGrey">#efefef</color>
+    <color name="grey">#919191</color>
+    <color name="darkGrey">#707070</color>
+    <color name="rippleWhite">#33FFFFFF</color>
+    <color name="inactive_icon">#A89F94</color>
+
+    <color name="mocha_brown">#6D4C41</color>
+    <color name="cream_back">#F5ECE1</color>
+    <color name="mocha_light">#DCC4B2</color>
+    <color name="mocha_dark">#B08B6E</color>
+    <color name="mocha_selected">#8B5E3C</color>
+
+
+
+    <!-- Primary Brand Colors -->
+    <color name="brown_main">#6F4F28</color>
+    <color name="brown_dark">#4B3A2B</color>
+    <color name="beige_secondary">#D49A6A</color>
+    <color name="cream">#FAF0E6</color>
+    <color name="cream_background">#FFF8F0</color>
+    <color name="bg">#ECE0D1</color>
+
+
+    <!-- On-Color (Text/Icon) -->
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#FFFFFF</color>
+
+    <!-- Backgrounds -->
+    <color name="background_light">#FFF4E1</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#4B3A2B</color>
+    <color name="text_secondary">#D49A6A</color>
+    <color name="text_link">#6F4F28</color>
+
+    <!-- Icon Tint (optional use) -->
+    <color name="icon_default">#6F4F28</color>
+    <color name="icon_selected">#D49A6A</color>
+
+    <color name="bottom_nav_background">#D2B89B</color>
+
+</resources>

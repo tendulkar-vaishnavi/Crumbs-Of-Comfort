@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.CrumbsOfComfort" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Status bar dark content -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <!-- Primary theme colors (dark variants) -->
+        <item name="colorPrimary">#D49A6A</item> <!-- Light brown for buttons etc. -->
+        <item name="colorPrimaryVariant">#E6C8A0</item> <!-- Softer lighter brown -->
+        <item name="colorOnPrimary">#2C1B0F</item> <!-- Deep brown text on light -->
+
+        <item name="colorSecondary">#A67B5B</item> <!-- Cozy secondary -->
+        <item name="colorOnSecondary">#1E140C</item>
+
+        <!-- Dark background -->
+        <item name="android:windowBackground">#2B2B2B</item> <!-- Cozy black-brown -->
+
+        <!-- Text colors for dark mode -->
+        <item name="android:textColorPrimary">#F8F1E7</item> <!-- Light cream for text -->
+        <item name="android:textColorSecondary">#C9BCA8</item>
+        <item name="android:textColorLink">#F0C987</item> <!-- Link in gold-ish tone -->
+    </style>
+
+    <style name="Theme.CrumbsOfComfort" parent="Base.Theme.CrumbsOfComfort"/>
+</resources>

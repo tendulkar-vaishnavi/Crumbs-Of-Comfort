@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/checkoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkout"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/brown"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Phone number (non-editable) -->
+        <TextView
+            android:id="@+id/tvPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: "
+            android:textSize="16sp"
+            android:textColor="#4B3E2A"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Default address (from profile) -->
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:textSize="16sp"
+            android:textColor="#4B3E2A"
+            android:layout_marginBottom="8dp" />
+
+        <!--<androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnChangeAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Another Address"
+            android:textColor="@color/brown"
+            android:padding="@dimen/dp_10"
+            android:background="@drawable/brown_bg"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etAlternateAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter new address (optional)"
+            android:background="@drawable/rounded_input"
+            android:padding="12dp"
+            android:visibility="gone"
+            android:textColor="#4B3E2A"
+            android:textColorHint="#BFAE99" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Date"
+            android:textStyle="bold"
+            android:textColor="#A67C52"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvSelectedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select delivery date"
+            android:padding="12dp"
+            android:background="@drawable/rounded_input"
+            android:textColorHint="#BFAE99"
+            android:textColor="#4B3E2A"
+            android:clickable="true"
+            android:focusable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Time"
+            android:textStyle="bold"
+            android:textColor="#A67C52"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvSelectedTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select delivery time"
+            android:padding="12dp"
+            android:background="@drawable/rounded_input"
+            android:textColorHint="#BFAE99"
+            android:textColor="#4B3E2A"
+            android:clickable="true"
+            android:focusable="false" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0C3A3"
+            android:layout_marginVertical="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Summary"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#A67C52"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvSubtotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtotal: ₹0.00"
+            android:textColor="#4B3E2A" />
+
+        <TextView
+            android:id="@+id/tvTax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tax: ₹0.00"
+            android:textColor="#4B3E2A" />
+
+        <TextView
+            android:id="@+id/tvDeliveryFee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delivery Fee: ₹0.00"
+            android:textColor="#4B3E2A" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: ₹0.00"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#4B3E2A"
+            android:layout_marginTop="4dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnConfirmAndPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm and Pay"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:textColor="@color/brown"
+            android:background="@drawable/brown_bg" />
+
+    </LinearLayout>
+</ScrollView>

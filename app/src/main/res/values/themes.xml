@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CrumbsOfComfort" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Make status bar icons dark -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="colorPrimary">#6F4F28</item> <!-- Brownish color for the main theme -->
+        <item name="colorPrimaryVariant">#4B3A2B</item> <!-- A darker brown shade -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- White text color for contrast -->
+        <item name="colorSecondary">#D49A6A</item> <!-- Light beige for secondary actions -->
+        <item name="colorOnSecondary">#FFFFFF</item> <!-- White text on secondary items -->
+
+        <!-- Optional: Customize more elements like background color -->
+        <item name="android:windowBackground">#FFF4E1</item> <!-- Light warm background color -->
+
+        <!-- Text appearance -->
+        <item name="android:textColorPrimary">#4B3A2B</item> <!-- Dark brown for text -->
+        <item name="android:textColorSecondary">#D49A6A</item> <!-- Lighter text color for secondary text -->
+        <item name="android:textColorLink">#6F4F28</item> <!-- Brown for links -->
+
+    </style>
+
+    <style name="CornerImageView10dp">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+    <style name="CornerImageView5dp">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">5dp</item>
+    </style>
+    <style name="FullCornerImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="EditFieldStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/background_edittext</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_primary</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+
+    <style name="Theme.CrumbsOfComfort" parent="Base.Theme.CrumbsOfComfort" />
+</resources>

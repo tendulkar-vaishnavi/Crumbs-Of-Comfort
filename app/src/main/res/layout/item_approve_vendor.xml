@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_card_bg"
+    android:elevation="4dp"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_17">
+
+        <TextView
+            android:id="@+id/txtShopName"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Shop Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginTop="@dimen/dp_7"/>
+        <TextView
+            android:id="@+id/txtShopReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop Registration"
+            android:layout_marginTop="@dimen/dp_7"/>
+        <TextView
+            android:id="@+id/txtAdhaar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adhaar card number"
+            android:layout_marginTop="@dimen/dp_7"/>
+        <TextView
+            android:id="@+id/txtPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone number"
+            android:layout_marginTop="@dimen/dp_7"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnApprove"
+            android:text="Approve"
+            android:textColor="@color/brown"
+            android:textStyle="bold"
+            android:padding="@dimen/dp_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/brown_bg"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F1"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <FrameLayout
+            android:id="@+id/profile_image_container"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background"
+                android:src="@drawable/logo_image" />
+
+            <TextView
+                android:id="@+id/tvInitials"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="36sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/edit_profile_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:background="@drawable/circle_white_bg"
+                android:src="@drawable/cam"
+                android:contentDescription="Edit Image"
+                android:elevation="4dp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#5D4037"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#7B5E57"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_10">
+            <TextView
+                android:id="@+id/tvEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textColor="#7B5E57"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp" />
+            <ImageView
+                android:id="@+id/edit_profile_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_pen"
+                android:layout_marginStart="@dimen/dp_10"
+                android:contentDescription="Edit Profile Fields"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/editSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:digits="0123456789"
+                android:maxLength="10"
+                android:background="@drawable/rounded_input"
+                android:textColor="#4B3E2A"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/etDob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date of Birth"
+                android:focusable="false"
+                android:clickable="true"
+                android:background="@drawable/rounded_input"
+                android:textColor="#4B3E2A"
+                android:padding="12dp"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/etAddress1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address Line 1"
+                android:background="@drawable/rounded_input"
+                android:textColor="#4B3E2A"
+                android:padding="12dp"
+                android:layout_marginTop="12dp" />
+
+            <!--<EditText
+                android:id="@+id/etAddress2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address Line 2 (Optional)"
+                android:background="@drawable/rounded_input"
+                android:textColor="#4B3E2A"
+                android:padding="12dp"
+                android:layout_marginTop="12dp" />-->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Changes"
+                android:textColor="@color/brown"
+                android:background="@drawable/brown_bg"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#5D4037"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

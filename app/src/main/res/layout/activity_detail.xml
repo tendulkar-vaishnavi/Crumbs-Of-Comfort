@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.Activity.DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bg">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="420dp">
+
+                <ImageView
+                    android:id="@+id/picMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                <ImageView
+                    android:id="@+id/backbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="48dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/back" />
+
+                <ImageView
+                    android:id="@+id/favBtn"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/backbtn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/backbtn"
+                    app:srcCompat="@drawable/ic_heart_outline" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/picList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:clipToPadding="false"
+                    android:paddingStart="@dimen/dp_4"
+                    android:paddingEnd="@dimen/dp_4"
+                    android:background="@drawable/white_bg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/brown_dark"
+                    android:textSize="22sp"
+                    android:text="title" />
+
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹0"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/brown_dark"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="16dp"
+                android:gravity="center">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/picSeller"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:shapeAppearanceOverlay="@style/FullCornerImageView"
+                    tools:srcCompat="@tools:sample/avatars" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sellerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brown Bakery"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/sellerAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123 Cozy Street, Pastry Town"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/callToSellerBtn"
+                    android:layout_marginEnd="@dimen/dp_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/call"/>
+                <ImageView
+                    android:id="@+id/msgToSellerBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/message"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Select weight"
+                    android:textStyle="bold"
+                    android:textColor="@color/brown_dark"/>
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:srcCompat="@drawable/star" />
+
+                <TextView
+                    android:id="@+id/txtRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/brown_dark"
+                    android:text="0" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/weightList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_marginTop="@dimen/dp_8"/>
+            <TextView
+                android:id="@+id/textServing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:layout_margin="@dimen/dp_10"
+                android:textColor="@color/brown_dark"/>
+
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="description"
+                android:textColor="@color/brown_dark"
+                android:layout_margin="@dimen/dp_16"/>
+            <EditText
+                android:id="@+id/editMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Message on cake"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_primary"
+                android:background="@drawable/background_edittext"
+                android:padding="@dimen/dp_14"
+                android:layout_marginHorizontal="@dimen/dp_12"/>
+
+            <RadioGroup
+                android:id="@+id/eggOptionGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp">
+
+                <RadioButton
+                    android:id="@+id/radio_with_egg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="With Egg"
+                    android:textColor="@color/brown_dark" />
+
+                <RadioButton
+                    android:id="@+id/radio_eggless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eggless"
+                    android:textColor="@color/brown_dark" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="@dimen/dp_8">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/addToCartBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@android:style/Widget.Button"
+                    android:background="@drawable/brown_bg"
+                    android:layout_margin="@dimen/dp_8"
+                    android:text="Add to Cart"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/brown_dark"
+                    android:textSize="@dimen/sp_18" />
+
+                <ImageView
+                    android:id="@+id/cartBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="@dimen/dp_8"
+                    android:background="@drawable/grey_bg_circle"
+                    android:padding="@dimen/dp_10"
+                    android:elevation="2dp"
+                    app:srcCompat="@drawable/cart" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

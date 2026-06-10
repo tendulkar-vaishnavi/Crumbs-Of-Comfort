@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream_background"
+    tools:context=".User.Activity.SignupActivity">
+
+    <ImageView
+        android:id="@+id/imageLogoSignup"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_image"
+        android:contentDescription="App Logo" />
+
+    <ScrollView
+        android:id="@+id/signupScrollView"
+        android:layout_below="@id/imageLogoSignup"
+        android:layout_above="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/formContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_card_bg"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:elevation="8dp">
+
+            <EditText
+                android:id="@+id/editName"
+                style="@style/EditFieldStyle"
+                android:hint="Full Name" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                style="@style/EditFieldStyle"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editPassword"
+                style="@style/EditFieldStyle"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/editConfirmPassword"
+                style="@style/EditFieldStyle"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+
+
+            <EditText
+                android:id="@+id/editShopName"
+                style="@style/EditFieldStyle"
+                android:hint="Shop Name" />
+
+            <EditText
+                android:id="@+id/editAadhaar"
+                style="@style/EditFieldStyle"
+                android:hint="Aadhaar Number"
+                android:inputType="number"
+                android:maxLength="12"/>
+            <EditText
+                android:id="@+id/editPhoneNumber"
+                style="@style/EditFieldStyle"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:maxLength="10"/>
+
+            <EditText
+                android:id="@+id/editShopReg"
+                style="@style/EditFieldStyle"
+                android:hint="Shop Registration Number" />
+
+           <!-- <Spinner
+                android:id="@+id/spinnerVehicleType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_edittext"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btnUploadProof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Proof"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp" />-->
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/cream_background"
+        android:elevation="8dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/brown_dark"
+            android:textStyle="bold"
+            style="@android:style/Widget.Button"
+            android:background="@drawable/brown_bg"
+            android:padding="14dp" />
+
+        <TextView
+            android:id="@+id/textHaveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Log In"
+            android:textColor="@color/brown"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="6dp"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textOrderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order ID: #1234"
+            android:textColor="@color/brown"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textShopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop: Sweet Crumbs"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textShopAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Pickup: 45 Baker Street, Bengaluru"
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="2dp"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/textUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer: Priya Sharma"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:layout_marginTop="14dp"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/textUserPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number:"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: 123, MG Road, Bengaluru"
+            android:textColor="@color/text_secondary"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textDeliveryStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: Out for Delivery"
+            android:textColor="@color/brown"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/spinnerStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/delivery_status_array" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/acceptButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept Order"
+            android:visibility="visible"
+            android:padding="@dimen/dp_10"
+            android:background="@drawable/brown_bg"
+            android:textColor="@color/brown"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="end" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnTrackDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Delivery"
+            android:textStyle="bold"
+            android:background="@drawable/brown_bg"
+            android:textColor="@color/brown"
+            android:visibility="gone"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="end"/>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

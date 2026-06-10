@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">CrumbsOfComfort</string>
+
+    <string name="intro_text">Treat Yourself To The Joy Of Our\n Fresh<font color="#854811"> Cake, Donuts</font> And\n Heavenly <font color="#854811">Pastries.</font></string>
+    <string name="intro_subtitle">Discover our best-selling delights,\n get personalized picks just for you,\n and enjoy fast, free shipping with every order.</string>
+    <string name="btnGetStarted">Lets Get Started</string>
+    <string name="intro_signin">Already have an account? <font color="#854811">Sign up</font></string>
+
+    <string name="welcome">Welcome</string>
+    <string name="name">Name</string>
+    <string name="hintSearch">Search anything</string>
+    <string name="categories">Categories</string>
+    <string name="seeall">See all</string>
+    <string name="bestseller">Best Seller</string>
+    <string name="explorer">Explorer</string>
+    <string name="cart">Cart</string>
+    <string name="favorite">Favorites</string>
+    <string name="myorder">My Orders</string>
+    <string name="profile">Profile</string>
+    <string name="title">title</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="login">LOGIN</string>
+    <string name="ForgotPassword">Forgot Password?</string>
+    <string name="DontHaveAccount">Dont have an account? Sign Up</string>
+
+    <string name="reset">RESET</string>
+    <string name="resetPassword">Reset Password</string>
+
+    <string name="signup">SIGN UP</string>
+    <string name="HaveAccount">Already have an account?</string>
+
+    <string name="rupeeSign">₹</string>
+    <string name="one">1</string>
+
+    <string-array name="delivery_status_array">
+        <item>Pending</item>
+        <item>Out for Delivery</item>
+        <item>Delivered</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+</resources>

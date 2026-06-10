@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/card_bg"
+    android:layout_marginBottom="12dp"
+    android:layout_margin="@dimen/dp_5"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="#3E2723"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/orderStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Pending"
+        android:layout_gravity="center"
+        android:textColor="#5D4037"
+        android:layout_marginTop="4dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnViewOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:text="View Order"
+        android:textColor="@color/brown_dark"
+        android:background="@drawable/brown_bg"
+        android:padding="@dimen/dp_10" />
+</LinearLayout>
+

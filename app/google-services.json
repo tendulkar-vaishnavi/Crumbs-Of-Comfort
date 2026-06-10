@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1048132230794",
+    "project_id": "crumbs-of-comfort",
+    "storage_bucket": "crumbs-of-comfort.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048132230794:android:c8fb04f2aed4d78efc1773",
+        "android_client_info": {
+          "package_name": "com.example.crumbsofcomfort"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZdofHdQniZ7Kz5VFmGnQz1m_inxrJFiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="6dp"
+    android:layout_marginHorizontal="10dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/orderImage"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cam"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/rounded_image_bg" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvOrderItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chocolate Donut Box"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#5D4037" />
+
+            <TextView
+                android:id="@+id/tvOrderDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#7B6F5A"
+                android:layout_marginTop="4dp" />
+            <TextView
+                android:id="@+id/tvOrderItemDeliverTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#5D4037" />
+
+            <TextView
+                android:id="@+id/tvOrderStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivered"
+                android:textSize="13sp"
+                android:textColor="#4CAF50"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/tvOrderPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹299"
+                android:textSize="14sp"
+                android:textColor="#795548"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvFeedbackRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating: 4.5 "
+                android:textSize="14sp"
+                android:textColor="#FFB300"
+                android:layout_marginTop="6dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvFeedbackComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cake was delicious!"
+                android:textSize="13sp"
+                android:textColor="#5D4037"
+                android:layout_marginTop="2dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

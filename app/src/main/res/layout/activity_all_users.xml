@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:background="@color/cream_background"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/back"  />
+
+        <TextView
+            android:id="@+id/textHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="All Users"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/black" />
+
+        <!-- Empty space for alignment -->
+        <View
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+    </LinearLayout>
+
+    <!-- Role Filter -->
+    <Spinner
+        android:id="@+id/spinnerRoleFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:padding="8dp"
+        android:layout_margin="8dp" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewUsers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="8dp" />
+
+    <!-- No Data Text -->
+    <TextView
+        android:id="@+id/textNoUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No users found"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="12dp" />
+
+</LinearLayout>
