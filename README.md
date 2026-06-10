@@ -83,6 +83,5 @@ Challenges Solved
 5.Developed custom cake ordering workflow
 6.Managed payment processing through Razorpay
 
-Screenshots
-<img width="738" height="1600" alt="IMG-20250812-WA0030" src="https://github.com/user-attachments/assets/60a72f60-0232-4cc7-b5b7-65392fb7d1d2" />
+
 
