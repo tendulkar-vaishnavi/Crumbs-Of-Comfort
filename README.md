@@ -84,4 +84,5 @@ Challenges Solved
 6.Managed payment processing through Razorpay
 
 Screenshots
-<img width="540" height="1170" alt="WhatsApp Image 2025-08-13 at 00 54 12_d38cdb5a" src="https://github.com/user-attachments/assets/f1b2ce4f-2d4e-466f-9f70-4d74c4b17543" />
+<img width="738" height="1600" alt="IMG-20250812-WA0030" src="https://github.com/user-attachments/assets/60a72f60-0232-4cc7-b5b7-65392fb7d1d2" />
+
